@@ -68,7 +68,6 @@ for(let i=0;i<animationDoneSection.length;i++)
 function isInViewPort(ele)
 {
       var coordinates=ele.getBoundingClientRect();
-     // console.log(coordinates.top);
       return (coordinates.top<=window.innerHeight);
 }
 
@@ -148,7 +147,6 @@ window.addEventListener("scroll",function()
        {
            fillBar(progessBar[i].firstElementChild);
            animationDone[i]=true;
-           //console.log("skill");
        }
        else if(!isInViewPort(progessBar[i]))
        {
@@ -183,7 +181,6 @@ window.addEventListener("scroll",function()
             $(" #leaves i:nth-of-type(5n)",sections[i]).css("-webkit-animation-delay","5.s")
             $(" #leaves i:nth-of-type(3n)",sections[i]).css("-webkit-animation","falling3 5s 0s 1;")
             animationDoneSection[i]=true;
-           // console.log(i)    
             
         }
         else if(!isInViewPort(sections[i]))
@@ -250,3 +247,31 @@ function autosize(textarea){
       el.style.cssText = 'height:' + el.scrollHeight + 'px';
     },0);
   }
+
+  let submitMessage=function()
+  {
+      $("form").submit(function(e)
+      {
+          e.preventDefault();
+          $.ajax({
+              url:"/send-message",
+              type:"post",
+              data:$("form").serialize(),
+              success:function(data)
+              {
+                swal({
+                    title: "Message Sent Successfully!",
+                    text: `Thank you ${data.data.user.name} for your time!`,
+                    icon: "success",
+                });
+              },
+              error:function(err)
+              {
+                  console.log(err.responseText);
+                  return;
+              }
+          })
+      })
+  }
+
+  submitMessage()

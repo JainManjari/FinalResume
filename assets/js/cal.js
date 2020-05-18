@@ -26,7 +26,6 @@ for(var i=0;i<btn.length;i++)
 					display.innerText="mod";
 				}
 				operator=value;
-			    console.log(op1,operator);
 			    sg=true;
 			}
 			else
@@ -52,7 +51,6 @@ for(var i=0;i<btn.length;i++)
 			
 			    op2=parseFloat(display.innerText);
 	            var result=eval(op1+" "+operator+" "+op2);
-	            console.log(op2,result);
 	            if(result==Infinity || isNaN(result) || result==-Infinity )
 	            {
 	            	display.innerText="Error";
@@ -158,7 +156,6 @@ document.addEventListener("keydown",function(event)
 {
 
 	var value=event.keyCode;
-	console.log(value);
 	if(value==49 || value==97 || value==50 || value==98 || value==51 || value==99 || value==52 || value==100 || value==53 || value==101 || value==54 || value==102 || value==55 || value==103 || value==56 || value==104 || value==57 || value==105 || value==48 || value==96 || value==190 || value==110 || value==35 || value==40 || value==34 || value==37 || value==12 || value==39 || value==36 || value==38 || value==33 || value==45 || value==46)
 	{
 		if(sg==true || display.innerText=="Error")

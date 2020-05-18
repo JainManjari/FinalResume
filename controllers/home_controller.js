@@ -8,7 +8,6 @@ module.exports.home= async function(req,res)
     }
     catch(err)
     {
-        console.log("Error in loading home page ",err);
         return;
     }
 }
@@ -20,7 +19,6 @@ module.exports.calculator=async function(req,res)
     }
     catch(err)
     {
-        console.log("Error in loading calculator page ",err);
         return;
     }
 }
@@ -32,7 +30,6 @@ module.exports.music=async function(req,res)
     }
     catch(err)
     {
-        console.log("Error in loading music page ",err);
         return;
     }
 }
@@ -44,7 +41,6 @@ module.exports.music2=async function(req,res)
     }
     catch(err)
     {
-        console.log("Error in loading music 2 page ",err);
         return;
     }
 }
@@ -56,7 +52,6 @@ module.exports.counter=async function(req,res)
     }
     catch(err)
     {
-        console.log("Error in loading counter page ",err);
         return;
     }
 }
@@ -69,7 +64,6 @@ module.exports.pingpong=async function(req,res)
     }
     catch(err)
     {
-        console.log("Error in loading pingpong page ",err);
         return;
     }
 }
@@ -77,22 +71,24 @@ module.exports.pingpong=async function(req,res)
 module.exports.newMessage=async function(req,res)
 {
     try{
-        console.log(req.body);
         let job=queue.create("messages",req.body).save(function(err)
         {
                 if(err)
                 {
-                    console.log("error in creating a queue ",err);
                     return;
                 }
-                console.log("job enqueued " ,job.id);
-
         });
-        return res.redirect("back");
+        return res.json({
+            data:{
+                user:req.body
+            },
+            message:"Message Sent Successfully!"
+        })
+
     }
     catch(err)
     {
-        console.log("Error in sending message ",err);
+        req.flash("error", "Message Delivery Failed!");
         return;
     }
 }

@@ -69,7 +69,6 @@ function increaseCount(curr,next,index)
         currNo.innerText=nextNo.innerText;
         nextNo.classList.remove("animate");
         nextNo.innerText=parseInt(nextNo.innerText)+1;
-        console.log(currNo.innerText,nextNo.innerText);
         if(nextNo.innerText>9)
         {
             nextNo.innerText=0;

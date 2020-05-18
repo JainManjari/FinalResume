@@ -37,7 +37,6 @@ rod2.style.left=rod2.offsetLeft+"px";
     {
         
         rod="Player 2";
-        // console.log(rod==rod1Name);
         maxScore=0;
     }
     resetBoard(rod);
@@ -52,17 +51,13 @@ function resetBoard(rod)
     ball.style.left=((viewWidth-ball.offsetWidth)/2)+"px";
 
 
-    //console.log("reset "+rod);
-
     if(rod==rod1Name)
     {
-      //  console.log("reset p1");
         ball.style.top=(rod2.offsetTop-rod2.offsetHeight)+"px";
         ballSpeedY=-2;
     }
     else if(rod==rod2Name)
     {
-      //  console.log("reset p2");
         ball.style.top=(rod1.offsetTop+rod1.offsetHeight)+"px";
         ballSpeedY=2;
     }
@@ -150,33 +145,20 @@ window.addEventListener("keydown",function(event)
 
                 if(ballY<=rod1Height)
                 {
-                    //console.log("ball <= rod1 height");
                     score++;
                     ballSpeedY=-ballSpeedY;
-                    console.log(ballPos,rod1X,rod1X+rod1Width);
                     if(ballPos<rod1X || ballPos>(rod1X+rod1Width))
                     {
-                        console.log("p1 loses");
                         storeWin(rod2Name,score);
-                    }
-                    else if(ballPos>=rod1X && ballPos<=rod1Width+rod1X)
-                    {
-                        console.log("p1 catches ball");
                     }
                 }
                 else if(ballY+ballDia>=viewHeight-rod2Height)
                 {
                     ballSpeedY=-ballSpeedY;
                     score++;
-                    console.log(ballPos,rod2X,rod2X+rod2Width);
                     if(ballPos<rod2X || ballPos> (rod2X+rod2Width))
                     {
-                        console.log("p2 loses");
                         storeWin(rod1Name,score);
-                    }
-                    else if(ballPos>=rod2X && ballPos<=rod2Width+rod2X)
-                    {
-                        console.log("p2 catches ball");
                     }
                 }
 

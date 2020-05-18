@@ -1,10 +1,12 @@
 const express=require('express');
 const port=8000;
+const env=require('./config/environment');
+const path=require('path');
 const app=express();
 
 app.use(express.urlencoded());
 
-app.use(express.static("./assets"));
+app.use(express.static(path.join(__dirname,env.asset_path)));
 
 app.set("view engine","ejs");
 app.set("views","./views");
