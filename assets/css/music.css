@@ -896,7 +896,7 @@ aside a:focus
 	color: lightgrey;
 	margin-right: 5%;
 }
-
+/* 
 .inside-q-list:nth-child(5n+2)::before
 {
 	content: '02';
@@ -905,7 +905,7 @@ aside a:focus
 	top:40%;
 	color: lightgrey;
 	margin-right: 5%;
-}
+} */
 
 .inside-q-list:nth-child(5n+3)::before
 {
