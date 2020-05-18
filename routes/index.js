@@ -10,5 +10,7 @@ router.get("/music-website",homeController.music);
 router.get("/music-website/singer-playlist",homeController.music2);
 router.get("/counter",homeController.counter);
 router.get("/ping-pong",homeController.pingpong);
+router.post("/send-message",homeController.newMessage);
+
 
 module.exports=router;
