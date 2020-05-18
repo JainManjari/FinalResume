@@ -45,3 +45,28 @@ module.exports.music2=async function(req,res)
         return;
     }
 }
+
+module.exports.counter=async function(req,res)
+{
+    try{
+        return res.render("counter");
+    }
+    catch(err)
+    {
+        console.log("Error in loading calculator page ",err);
+        return;
+    }
+}
+
+
+module.exports.pingpong=async function(req,res)
+{
+    try{
+        return res.render("pingpong");
+    }
+    catch(err)
+    {
+        console.log("Error in loading calculator page ",err);
+        return;
+    }
+}

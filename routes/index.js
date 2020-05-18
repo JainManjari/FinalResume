@@ -8,5 +8,7 @@ router.get("/",homeController.home);
 router.get("/calculator",homeController.calculator);
 router.get("/music-website",homeController.music);
 router.get("/music-website/singer-playlist",homeController.music2);
+router.get("/counter",homeController.counter);
+router.get("/ping-pong",homeController.pingpong);
 
 module.exports=router;
