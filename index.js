@@ -6,7 +6,7 @@ const app=express();
 //require('./config/view-helpers')(app);
 app.use(express.urlencoded({extended:false}));
 
-app.use(express.static(path.join(__dirname,env.asset_path)));
+app.use(express.static("./assets"));
 
 app.set("view engine","ejs");
 app.set("views","./views");
