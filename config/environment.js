@@ -13,4 +13,4 @@ const production={
     },
 }
 
-module.exports=eval(process.env.CODEIAL_ENVIRONMENT);
+module.exports=production;
