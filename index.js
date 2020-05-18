@@ -4,7 +4,7 @@ const env=require('./config/environment');
 const path=require('path');
 const app=express();
 //require('./config/view-helpers')(app);
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended:false}));
 
 app.use(express.static(path.join(__dirname,env.asset_path)));
 
