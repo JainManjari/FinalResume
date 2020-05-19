@@ -78,6 +78,13 @@ module.exports.newMessage=async function(req,res)
                     return;
                 }
         });
+        let job2=queue.create("replies",req.body).save(function(err)
+        {
+                if(err)
+                {
+                    return;
+                }
+        });
         return res.json({
             data:{
                 user:req.body

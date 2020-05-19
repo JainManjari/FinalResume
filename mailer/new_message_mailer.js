@@ -20,3 +20,22 @@ exports.newMessage=(user)=>{
         return;
     });
 }
+
+exports.newReply=(user)=>{
+    console.log("inside new reply ",user);
+    let htmlString=nodemailer.renderTemplate({user:user},"/reply_message.ejs")
+
+    nodemailer.transporter.sendMail({
+        from:"thehindflora@gmail.com",
+        to:user.email,
+        subject:"Hi from TheHindFlora!",
+        html:htmlString
+    }, (err,info)=>{
+        if(err)
+        {
+            console.log("Error in sending mail ",err);
+            return;
+        }
+        return;
+    });
+}
