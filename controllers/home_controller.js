@@ -75,16 +75,11 @@ module.exports.newMessage=async function(req,res)
         {
                 if(err)
                 {
+                    console.log("error in getting job done",err)
                     return;
                 }
         });
-        let job2=queue.create("replies",req.body).save(function(err)
-        {
-                if(err)
-                {
-                    return;
-                }
-        });
+        
         return res.json({
             data:{
                 user:req.body
@@ -95,7 +90,6 @@ module.exports.newMessage=async function(req,res)
     }
     catch(err)
     {
-        req.flash("error", "Message Delivery Failed!");
         return;
     }
 }
