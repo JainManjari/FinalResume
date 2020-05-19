@@ -78,6 +78,16 @@ module.exports.newMessage=async function(req,res)
                     console.log("error in getting job done",err)
                     return;
                 }
+                console.log("job message enqued ",job.id)
+        });
+        let job2=queue.create("replies",req.body).save(function(err)
+        {
+                if(err)
+                {
+                    console.log("error in getting job done",err)
+                    return;
+                }
+                console.log("job reply enqued ",job.id)
         });
         
         return res.json({
