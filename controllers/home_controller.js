@@ -4,6 +4,7 @@ const messageWorker=require('../worker/new_message_worker');
 module.exports.home= async function(req,res)
 {
     try{
+        console.log("home")
         return res.render("home");
     }
     catch(err)
@@ -71,6 +72,7 @@ module.exports.pingpong=async function(req,res)
 module.exports.newMessage=async function(req,res)
 {
     try{
+        console.log("message",req.body);
         let job=queue.create("messages",req.body).save(function(err)
         {
                 if(err)
