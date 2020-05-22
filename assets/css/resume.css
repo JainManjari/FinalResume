@@ -113,6 +113,11 @@ body.modal-open {
 		height: 86%;
     	width: 100%;
 	}
+
+	#body-header .text
+	{
+		width: 33%;
+	}
 }
 
 @media screen and (max-width:800px)
