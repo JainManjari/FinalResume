@@ -1386,6 +1386,7 @@ input:focus,textarea:focus,button:focus
 		left: 0%;
 		border-width: 3px;
 		border-right: none;
+		height: 86%;
 
 	}
 	.timeline-box::after,#education .timeline-box::after
@@ -1444,5 +1445,8 @@ input:focus,textarea:focus,button:focus
 		width: 100%;
 		margin: 15px;
 	}
-
+	.divider-border {
+		
+		height: 84%;
+	}
 }
