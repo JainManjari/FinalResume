@@ -97,6 +97,24 @@ body.modal-open {
 	font-size: 39px;
 	text-align: left;
 }
+
+@media screen and (max-width:1050px)
+{
+	#body-header .image1{
+	display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+	padding-left: 57px;
+	}
+
+	#body-header .image1 img{
+		height: 86%;
+    	width: 100%;
+	}
+}
+
 @media screen and (max-width:800px)
 {
 	#body-header{
@@ -109,6 +127,10 @@ body.modal-open {
 			padding: 25px;
 			margin-top: 20px;
 			overflow: hidden;
+	}
+
+	#body-header .image1 img{
+		width: auto;
 	}
 	
 	#body-header .text{
