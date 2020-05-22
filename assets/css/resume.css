@@ -181,6 +181,7 @@ body.modal-open {
 	#body-header .text
 	{
 		width: 100%;
+	
 	}
 	#body-header .text p{
 		font-size: 24px;
@@ -190,7 +191,10 @@ body.modal-open {
 
 @media screen and (max-width:400px)
 {
-	
+	#body-header .text
+	{
+		margin-top: -142px;
+	}
 	#body-header .text p{
 		font-size: 22px;
 		padding: 10px;
