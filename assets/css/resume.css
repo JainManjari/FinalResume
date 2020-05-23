@@ -1075,6 +1075,12 @@ section:nth-child(2n+1)
 	padding: 2px;
 }
 
+.bluegrey
+{
+	background-color:#56708a;
+	padding: 2px;
+}
+
 .pink
 {
 	background-color: #93738c;
@@ -1082,10 +1088,12 @@ section:nth-child(2n+1)
 }
 .skill-name span
 {
-   color: white;
-   font-size: 1.15rem;
-   margin-left: 10px;
-   vertical-align: top;
+	color: #dccfcf;
+    font-size: 1.15rem;
+    margin-left: 10px;
+    vertical-align: top;
+    font-family: geogria;
+    font-style: oblique;
 }
 
 #contact
