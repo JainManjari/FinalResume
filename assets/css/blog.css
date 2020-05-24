@@ -17,7 +17,7 @@ body
     top:0;
     left: 0;
     width: 100vw;
-    height: auto;
+    height: 100vh;
     /* max-height: 100vh;
     min-height: 100vh; */
     background-color: #971f48;
@@ -33,6 +33,7 @@ body
     animation-duration: 1.8s,1.8s,1.8s;
     animation-timing-function: ease-in-out,ease-in-out;
     animation-fill-mode: forwards,forwards,forwards;
+    animation-delay: 0.55s,0.55s,0.55s;
 }
 
 @keyframes circle
