@@ -69,6 +69,19 @@ module.exports.pingpong=async function(req,res)
     }
 }
 
+
+module.exports.blog1=async function(req,res)
+{
+    try{
+        return res.render("blog-struggle");
+    }
+    catch(err)
+    {
+        return;
+    }
+}
+
+
 module.exports.newMessage=async function(req,res)
 {
     try{
