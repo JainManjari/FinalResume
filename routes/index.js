@@ -11,7 +11,7 @@ router.get("/music-website/singer-playlist",homeController.music2);
 router.get("/counter",homeController.counter);
 router.get("/ping-pong",homeController.pingpong);
 router.post("/send-message",homeController.newMessage);
-router.get("/struggle-gratitude",homeController.blog1);
+router.get("/blog/article1",homeController.blog1);
 
 
 module.exports=router;
