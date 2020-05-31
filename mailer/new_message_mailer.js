@@ -11,6 +11,7 @@ exports.newMessage=(user)=>{
     }, (err,info)=>{
         if(err)
         {
+            console.log("error mail 1",err);
             return;
         }
         return;
@@ -28,6 +29,7 @@ exports.newReply=(user)=>{
     }, (err,info)=>{
         if(err)
         {
+            console.log("error mail 2",err);
             return;
         }
         return;
