@@ -176,6 +176,14 @@ body.modal-open {
 	}
 }
 
+@media (max-width:530px)
+{
+	.skyinyou
+	{
+		width: 70% !important;
+	}
+}
+
 @media screen and (max-width:500px)
 {
 	#body-header .text
@@ -460,13 +468,13 @@ body.modal-open {
 
 .threejournies .certificates
 {
-	box-shadow: 0px 0px 5px 5px #006AAD;
-	background: #006AAD;
+	box-shadow: 0px 0px 5px 5px #386839;
+    background: #386839;
 }
 
 .threejournies .certificates .toplayer
 {
-	background:#5a86b3;
+	background: #3f7a41;
 }
 
 .threejournies .portfolio .toplayer
@@ -506,7 +514,7 @@ body.modal-open {
 .threejournies .certificates .insidetext
 {
 	text-shadow: 1px 1px 3px #4a4467;
-    color: #8989bd;
+    color: #6ca18b;
 }
 
 .threejournies .portfolio .insidetext
@@ -680,6 +688,56 @@ body.modal-open {
 {
 	color:#866666;
 	font-size: 20px;
+}
+
+.skyinyou{
+	width: 55%;
+    font-size: 27px;
+    text-align: center;
+    color: darkslategray;
+    font-family: satisfy;
+    word-spacing: 7px;
+	letter-spacing: 7px;
+	margin-bottom: 15px;
+}
+
+.skyinyou span{
+	display: block;
+	margin-bottom: 20px;
+}
+
+.skyinyou span i{
+	font-size: 35px;
+}
+
+.skyinyou-link{
+	width: 100%;
+	font-size: 18px;
+    min-height: 75px;
+    margin-bottom: 20px;
+    background: linear-gradient(to top, #1D6396, #00A5CF) !important;
+    color: whitesmoke;
+    padding: 15px;
+    text-align: left;
+	border-radius: 20px 0px 20px 0px;
+	letter-spacing: 0;
+	word-spacing: 0;
+}
+.skyinyou-link a{
+	color: #E0F7FA;
+	text-decoration:underline;
+	font-family: 'Merienda One', cursive;
+}
+
+.skyinyou-link a:hover{
+	text-decoration-color: darkblue;
+}
+
+.skyinyou-link .text{
+	margin-bottom: 0;
+    margin-top: 5px;
+    font-family: bellota,cursive;
+    font-size: 14.5px;
 }
 
 #about-para
