@@ -178,9 +178,12 @@ body.modal-open {
 
 @media (max-width:530px)
 {
-	.skyinyou
+	.skyinyou,.publication
 	{
 		width: 70% !important;
+	}
+	.publication a{
+		flex-direction: column;
 	}
 }
 
@@ -280,6 +283,9 @@ body.modal-open {
 {
 	.navbar #navbarNav{
 		margin-left: 34%;
+	}
+	#about-para span{
+		text-align: justify !important;
 	}
 	
 }
@@ -690,7 +696,7 @@ body.modal-open {
 	font-size: 20px;
 }
 
-.skyinyou{
+.skyinyou,.publication{
 	width: 55%;
     font-size: 27px;
     text-align: center;
@@ -701,13 +707,42 @@ body.modal-open {
 	margin-bottom: 15px;
 }
 
-.skyinyou span{
+.publication
+{
+	border: 2.5px dotted;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	min-height: 125px;
+	padding: 20px;
+}
+
+.skyinyou{
+	margin-bottom: 25px;
+}
+
+.skyinyou span,.publication a{
 	display: block;
 	margin-bottom: 20px;
 }
 
+.publication a{
+	margin-bottom: 0;
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: none;
+	color: darkslategray;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .skyinyou span i{
 	font-size: 35px;
+}
+
+.publication a i{
+	font-size: 45px;
 }
 
 .skyinyou-link{
