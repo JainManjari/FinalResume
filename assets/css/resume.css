@@ -1308,9 +1308,14 @@ input:focus,textarea:focus,button:focus
 	background: #576573;
 }
 
+#education .timeline-box:nth-child(2n)::after
+{
+	left:-13.5%;
+}
+
 .timeline-box:nth-child(2n)::after
 {
-	left: -13.5%;
+	left: -14%;
 }
 
 .heading1
@@ -1400,19 +1405,19 @@ input:focus,textarea:focus,button:focus
 
 #education .divider-border
 {
-	height: 71%;
-    top: -1%;
+	height: 67% !important;
+    top: 3%;
     border-color: #823410;
 }
 .aeroplane
 {
 	margin-top: -30px;
-	position: sticky;
+    position: sticky;
     top: 10%;
     font-size: 2em;
-    color: #4f87c0;
-	z-index: 2;
-	text-shadow: 3px 3px #334e66;
+    color: #BDBDBD;
+    z-index: 2;
+    text-shadow: 3px 3px #616161;
 }
 
 #education .aeroplane
@@ -1445,7 +1450,7 @@ input:focus,textarea:focus,button:focus
 	}
 	#education .divider-border
 	{
-		height: 72% !important;
+		height: 69% !important;
 	}
 }
 
@@ -1461,13 +1466,13 @@ input:focus,textarea:focus,button:focus
 	}
 }
 
-@media screen and (max-width:1140px)
+/* @media screen and (max-width:1140px)
 {
 	#education .divider-border
 	{
 		height: 73% !important;
 	}
-}
+} */
 
 @media screen and (max-width:1100px)
 {
@@ -1481,13 +1486,13 @@ input:focus,textarea:focus,button:focus
 	
 }
 
-@media screen and (max-width:1040px)
+/* @media screen and (max-width:1040px)
 {
 	#education .divider-border
 	{
 		height: 75% !important;
 	}
-}
+} */
 
 @media screen and (max-width:1000px)
 {
@@ -1511,7 +1516,7 @@ input:focus,textarea:focus,button:focus
 {
 	#education .divider-border
 	{
-		height: 73% !important;
+		height: 67% !important;
 	}
 
 	.skill{
@@ -1565,6 +1570,10 @@ input:focus,textarea:focus,button:focus
 	{
 		left:-11%;
 	}
+	#education .divider-border
+	{
+		height: 69.5% !important;
+	}
 }
 
 
@@ -1591,7 +1600,7 @@ input:focus,textarea:focus,button:focus
 {
 	#education .divider-border
 	{
-		height: 70% !important;
+		height: 67% !important;
 	}
 }
 
@@ -1646,7 +1655,7 @@ input:focus,textarea:focus,button:focus
 	}
 	#education .divider-border
 	{
-		height: 73% !important;
+		height: 68% !important;
 	}
 	
 	#education .timeline-box::after
@@ -1663,7 +1672,7 @@ input:focus,textarea:focus,button:focus
 {
 	#education .divider-border
 	{
-		height: 74% !important;
+		height: 69% !important;
 	}
 	.divider-border
 	{
