@@ -62,10 +62,10 @@ body.modal-open {
 }
 #body-header .text
 {
-	width: 40%;
+	width: 33%;
     padding: 50px;
-    box-sizing: border-box;
-    font-variant-caps: unicase;
+	box-sizing: border-box;
+	font-family: 'Pacifico', cursive;
     color: white;
     display: flex;
     flex-direction: column;
@@ -144,7 +144,7 @@ body.modal-open {
 		margin: -35px auto 10px;
 	}
 	#body-header .text p{
-		font-size: 28px;
+		font-size: 31px;
 		padding: 20px;
 	}
 }
