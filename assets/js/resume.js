@@ -6,6 +6,7 @@ for(let i=0;i<list.length;i++)
     list[i].addEventListener("click",function(event)
     {
          event.preventDefault();
+         $("#navbarNav").removeClass("show")
          var value=this.textContent.trim().toLowerCase();
          var sectionId=document.getElementById(value);
          var curr=0;
@@ -18,7 +19,7 @@ for(let i=0;i<list.length;i++)
          {
              targetPos=sectionId.getBoundingClientRect().y+10
          }
-         console.log(sectionId,targetPos)
+         //console.log(sectionId,targetPos)
          $(" #leaves i",sectionId).css("-webkit-animation","none")
          $(" #leaves i:nth-of-type(2n)",sectionId).css("-webkit-animation","none")
          $(" #leaves i:nth-of-type(3n)",sectionId).css("-webkit-animation","none")
@@ -236,6 +237,15 @@ var i=0;
 $(document).ready(function()
 {
     setTimeout(typewriter(),900);
+    if(header.offsetHeight<=pageYOffset)
+    {
+       
+        $(".navbar").addClass("fixed-top")
+    }
+    else
+    {
+        $(".navbar").removeClass("fixed-top")
+    }
 })
 
 var endText="You know that an end signifies a new beginning, right?"

@@ -1,6 +1,6 @@
 const queue=require('../config/kue');
 const messageWorker=require('../worker/new_message_worker');
-
+//console.log("controller")
 module.exports.home= async function(req,res)
 {
     try{
@@ -9,6 +9,7 @@ module.exports.home= async function(req,res)
     }
     catch(err)
     {
+        console.log("error in home ",err)
         return;
     }
 }

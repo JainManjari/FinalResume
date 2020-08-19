@@ -13,6 +13,6 @@ router.get("/counter",homeController.counter);
 router.get("/ping-pong",homeController.pingpong);
 router.post("/send-message",homeController.newMessage);
 
-
+//console.log("routes")
 
 module.exports=router;
