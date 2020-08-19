@@ -1681,6 +1681,10 @@ input:focus,textarea:focus,button:focus
 	{
 		height: 82% !important;
 	}
+	.publication
+	{
+		margin-bottom: 30px;
+	}
 }
 
 
