@@ -178,13 +178,15 @@ body.modal-open {
 
 @media (max-width:530px)
 {
-	.skyinyou,.publication
+	.newsFlash
 	{
-		width: 70% !important;
-	}
-	.publication a{
 		flex-direction: column;
 	}
+	.skyinyou
+	{
+		width: 100% !important;
+	}
+
 }
 
 @media screen and (max-width:500px)
@@ -696,8 +698,17 @@ body.modal-open {
 	font-size: 20px;
 }
 
+.newsFlash
+{
+	width: 73%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+	flex-wrap: wrap;
+}
+
 .skyinyou,.publication{
-	width: 55%;
+	width:270px;
     font-size: 27px;
     text-align: center;
     color: darkslategray;
@@ -709,30 +720,46 @@ body.modal-open {
 
 .publication
 {
-	border: 2.5px dotted;
     display: flex;
     justify-content: center;
     align-items: center;
-	min-height: 125px;
-	padding: 20px;
+    padding: 25px;
+    width: 245px;
+    height: 245px;
+    position: relative;
 }
 
-.skyinyou{
-	margin-bottom: 25px;
+.publication .public-border{
+	position: absolute;
+	border: 2.5px dashed dimgrey;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	background-clip: content-box;
+	animation: spin 10s linear infinite;
+	transition: all 1.2s ease-in;
 }
 
-.skyinyou span,.publication a{
+@keyframes spin { 
+	100% { 
+	  transform: rotateZ(360deg);
+	}
+  }
+
+
+.skyinyou span,.publication span{
 	display: block;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 
-.publication a{
+.publication span{
 	margin-bottom: 0;
 	font-size: 22px;
 	font-weight: bold;
 	text-decoration: none;
 	color: darkslategray;
 	display: flex;
+	flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -741,14 +768,23 @@ body.modal-open {
 	font-size: 35px;
 }
 
-.publication a i{
+.publication span i{
 	font-size: 45px;
+}
+
+.publication:hover{
+	text-decoration: none;
+}
+
+.publication:hover .public-border
+{
+	border-color: #D85537;
 }
 
 .skyinyou-link{
 	width: 100%;
 	font-size: 18px;
-    min-height: 75px;
+    min-height: 210px;
     margin-bottom: 20px;
     background: linear-gradient(to top, #1D6396, #00A5CF) !important;
     color: whitesmoke;
@@ -770,9 +806,9 @@ body.modal-open {
 
 .skyinyou-link .text{
 	margin-bottom: 0;
-    margin-top: 5px;
+    margin-top: 18px;
     font-family: bellota,cursive;
-    font-size: 14.5px;
+	font-size: 14.5px;
 }
 
 #about-para
@@ -1132,6 +1168,11 @@ section:nth-child(2n+1)
 	/* padding: 2px; */
 }
 
+.python
+{
+	background-color:#DA6262;
+}
+
 .orange
 {
 	background-color: #ec4d1c;
@@ -1363,7 +1404,7 @@ input:focus,textarea:focus,button:focus
     background: linear-gradient(to right, #b92b27, #D7503A);
     height: auto;
     box-shadow: 0px 0px 7px 1px red;
-    min-height: 235px;
+    /* min-height: 235px; */
     text-align: right;
 }
 
