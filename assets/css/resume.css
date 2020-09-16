@@ -118,6 +118,11 @@ body.modal-open {
 	{
 		width: 33%;
 	}
+
+	.about-i
+	{
+		width: 80% !important;
+	}
 }
 
 @media screen and (max-width:800px)
@@ -149,6 +154,14 @@ body.modal-open {
 	}
 }
 
+@media screen and (max-width:750px)
+{
+	.about-i
+	{
+		width: 100% !important;
+	}
+}
+
 @media screen and (max-width:710px)
 {
 	#body-header .text
@@ -173,6 +186,10 @@ body.modal-open {
 	}
 	#body-header .text p{
 		font-size: 26px;
+	}
+	.aboutquote
+	{
+		width: 65% !important;
 	}
 }
 
@@ -201,6 +218,22 @@ body.modal-open {
 	}
 }
 
+@media screen and (max-width:475px)
+{
+	.aboutquote
+	{
+		width: 75% !important;
+	}
+	blockquote{
+		font-size: 16px !important;
+	}
+	blockquote:before,blockquote:after{
+		font-size: 65px !important;
+	}
+	.about-i small{
+		font-size: 15px !important;
+	}
+}
 
 @media screen and (max-width:400px)
 {
@@ -1431,6 +1464,54 @@ input:focus,textarea:focus,button:focus
 	z-index: 2;
 	transform: translateX(-20px);
     color: #20957f;
+}
+
+.about-i
+{
+	width: 65%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 17px;
+	font-style: italic;
+	width:100%;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+}
+blockquote:after {
+    font-family: Georgia, serif;
+    position: absolute;
+    float:right;
+    font-size:80px;
+    line-height: 1;
+    right:0;
+    bottom:-0.5em;
+    content: "\201D";
+}
+blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
 }
 
 @media (max-width:1295px)
