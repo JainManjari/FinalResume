@@ -10,6 +10,7 @@ body
 	margin: 0px;
 	font-family: sans-serif;
 	height: 100%;
+	overflow-x: hidden;
 	
 }
 
@@ -1568,7 +1569,7 @@ blockquote cite:before {
 @media screen and (max-width:1100px)
 {
 	.navbar button{
-		margin-left: 90%;
+		margin-left: 85%;
 	}
 
 	.navbar #navbarNav{
