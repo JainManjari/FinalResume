@@ -960,8 +960,15 @@ section:nth-child(2n+1)
 	height: 50px;
 }
 
+#logo-designer{
+	color:#DCEDC8;
+	text-decoration: none;
+	transition: all 0.5s ease-in-out;
+}
 
-
+#logo-designer:hover{
+	color:#FFCDD2;
+}
 
 @media screen and (max-width:375px)
 {
