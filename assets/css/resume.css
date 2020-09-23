@@ -101,158 +101,6 @@ body.modal-open {
 	text-align: left;
 }
 
-@media screen and (max-width:1050px)
-{
-	#body-header .image1{
-	display: flex;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-	padding-left: 57px;
-	}
-
-	#body-header .image1 img{
-		height: 86%;
-    	width: 100%;
-	}
-
-	#body-header .text
-	{
-		width: 33%;
-	}
-
-	.about-i
-	{
-		width: 80% !important;
-	}
-}
-
-@media screen and (max-width:800px)
-{
-	#body-header{
-		flex-wrap: wrap;
-	}
-
-	#body-header .image1 {
-			width: 100%;
-			height: 65%;
-			padding: 25px;
-			margin-top: 20px;
-			overflow: hidden;
-	}
-
-	#body-header .image1 img{
-		width: auto;
-	}
-	
-	#body-header .text{
-		padding: 20px;
-		width: 75%;
-		margin: -35px auto 10px;
-	}
-	#body-header .text p{
-		font-size: 31px;
-		padding: 20px;
-	}
-}
-
-@media screen and (max-width:750px)
-{
-	.about-i
-	{
-		width: 100% !important;
-	}
-}
-
-@media screen and (max-width:710px)
-{
-	#body-header .text
-	{
-		width: 87%;
-	}
-}
-
-@media screen and (max-width:600px)
-{
-	#body-header .text
-	{
-		width: 93%;
-	}
-}
-
-@media screen and (max-width:575px)
-{
-	#body-header .text
-	{
-		width: 100%;
-	}
-	#body-header .text p{
-		font-size: 26px;
-	}
-	.aboutquote
-	{
-		width: 65% !important;
-	}
-}
-
-@media (max-width:530px)
-{
-	.newsFlash
-	{
-		flex-direction: column;
-	}
-	.skyinyou
-	{
-		width: 100% !important;
-	}
-
-}
-
-@media screen and (max-width:500px)
-{
-	#body-header .text
-	{
-		width: 100%;
-	
-	}
-	#body-header .text p{
-		font-size: 24px;
-	}
-}
-
-@media screen and (max-width:475px)
-{
-	.aboutquote
-	{
-		width: 75% !important;
-	}
-	blockquote{
-		font-size: 16px !important;
-	}
-	blockquote:before,blockquote:after{
-		font-size: 65px !important;
-	}
-	.about-i small{
-		font-size: 15px !important;
-	}
-}
-
-@media screen and (max-width:400px)
-{
-	#body-header .text
-	{
-		margin-top: -142px;
-	}
-	#body-header .text p{
-		font-size: 22px;
-		padding: 10px;
-		margin-bottom: 0px;
-	}
-	#body-header .text .takeoff{
-		font-size: 30px;
-	}
-}
 
 .navbar{
 	background: #9ABA1E !important;
@@ -973,14 +821,6 @@ section:nth-child(2n+1)
 	color:#FFCDD2;
 }
 
-@media screen and (max-width:375px)
-{
-	.threejournies >div .modal .modal-content .carousel .carousel-inner .carousel-item .card #qb2
-	{
-		margin-top: 0;
-	}
-}
-
 #education .description ul li::before
 {
 	content:'';
@@ -1587,6 +1427,32 @@ blockquote cite:before {
 		height: 75% !important;
 	}
 } */
+@media screen and (max-width:1050px)
+{
+	#body-header .image1{
+	display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+	padding-left: 57px;
+	}
+
+	#body-header .image1 img{
+		height: 86%;
+    	width: 100%;
+	}
+
+	#body-header .text
+	{
+		width: 33%;
+	}
+
+	.about-i
+	{
+		width: 80% !important;
+	}
+}
 
 @media screen and (max-width:1000px)
 {
@@ -1668,8 +1534,49 @@ blockquote cite:before {
 	{
 		height: 69.5% !important;
 	}
+	#body-header{
+		flex-wrap: wrap;
+	}
+
+	#body-header .image1 {
+			width: 100%;
+			height: 65%;
+			padding: 25px;
+			margin-top: 20px;
+			overflow: hidden;
+	}
+
+	#body-header .image1 img{
+		width: auto;
+	}
+	
+	#body-header .text{
+		padding: 20px;
+		width: 75%;
+		margin: -35px auto 10px;
+	}
+	#body-header .text p{
+		font-size: 31px;
+		padding: 20px;
+	}
+
 }
 
+@media screen and (max-width:750px)
+{
+	.about-i
+	{
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-width:710px)
+{
+	#body-header .text
+	{
+		width: 87%;
+	}
+}
 
 @media screen and (max-width:700px)
 {
@@ -1708,6 +1615,10 @@ blockquote cite:before {
 		
 		height: 82.5%;
 	}
+	#body-header .text
+	{
+		width: 93%;
+	}
 }
 
 @media screen and (max-width:580px)
@@ -1722,6 +1633,21 @@ blockquote cite:before {
 	
 }
 
+@media screen and (max-width:575px)
+{
+	#body-header .text
+	{
+		width: 100%;
+	}
+	#body-header .text p{
+		font-size: 26px;
+	}
+	.aboutquote
+	{
+		width: 65% !important;
+	}
+}
+
 @media screen and (max-width:550px)
 {
 	.timeline-box::after
@@ -1734,11 +1660,54 @@ blockquote cite:before {
 	}
 }
 
+@media (max-width:530px)
+{
+	.newsFlash
+	{
+		flex-direction: column;
+	}
+	.skyinyou
+	{
+		width: 100% !important;
+	}
+
+}
+
+@media screen and (max-width:500px)
+{
+	#body-header .text
+	{
+		width: 100%;
+	
+	}
+	#body-header .text p{
+		font-size: 24px;
+	}
+}
+
+
 @media (max-width:480px)
 {
 	.divider-border
 	{
 		height: 83% !important;
+	}
+}
+
+@media screen and (max-width:475px)
+{
+	.aboutquote
+	{
+		width: 75% !important;
+	}
+	blockquote{
+		font-size: 16px !important;
+	}
+	blockquote:before,blockquote:after{
+		font-size: 65px !important;
+	}
+	.about-i small{
+		font-size: 15px !important;
 	}
 }
 
@@ -1776,8 +1745,27 @@ blockquote cite:before {
 	{
 		margin-bottom: 40px;
 	}
+	#body-header .text
+	{
+		margin-top: -142px;
+	}
+	#body-header .text p{
+		font-size: 22px;
+		padding: 10px;
+		margin-bottom: 0px;
+	}
+	#body-header .text .takeoff{
+		font-size: 30px;
+	}
 }
 
+@media screen and (max-width:375px)
+{
+	.threejournies >div .modal .modal-content .carousel .carousel-inner .carousel-item .card #qb2
+	{
+		margin-top: 0;
+	}
+}
 
 @media screen and (max-width:340px)
 {
