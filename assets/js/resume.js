@@ -291,7 +291,19 @@ function autosize(textarea){
       el.style.cssText = 'height:auto; padding:0';
       el.style.cssText = 'height:' + el.scrollHeight + 'px';
     },0);
-  }
+}
+
+let mailIcon=$("#mailicon")
+$("#mailto").mouseover(function()
+{
+    mailIcon.removeClass("fa-envelope")
+    mailIcon.addClass("fa-envelope-open")
+})
+$("#mailto").mouseout(function()
+{
+    mailIcon.addClass("fa-envelope")
+    mailIcon.removeClass("fa-envelope-open")
+})
 
 let submitMessage=function(){$("form").submit((function(e){e.preventDefault(),$.ajax({url:"/send-message",type:"post",data:$("form").serialize(),success:function(e){swal({title:"Message Sent Successfully!",text:`Thank you ${e.data.user.name} for your time!`,icon:"success"})},error:function(e){console.log(e.responseText)}})}))};
 submitMessage();
