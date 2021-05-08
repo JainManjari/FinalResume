@@ -47,10 +47,10 @@ module.exports.music2=async function(req,res)
     }
 }
 
-module.exports.counter=async function(req,res)
+module.exports.ipod=async function(req,res)
 {
     try{
-        return res.render("counter");
+        return res.render("ipod");
     }
     catch(err)
     {
