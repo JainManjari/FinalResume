@@ -821,7 +821,7 @@ section:nth-child(2n+1)
 	color:#FFCDD2;
 }
 
-#education .description ul li::before
+.description ul li::before
 {
 	content:'';
 	display: inline-block;
@@ -1278,7 +1278,7 @@ input:focus,textarea:focus,button:focus
 	margin-bottom: 12px;
 }
 
-#education .description ul{
+.description ul{
 	padding: 0;
 	list-style: none;
 }
